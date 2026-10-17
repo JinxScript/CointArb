@@ -35,6 +35,6 @@ final_df.dropna(inplace=True)
 for i in list(final_df):
     for j in list(final_df):
         if i != j:
-            pair = i + '-' + j
-            statistic, p_value, critical_values = coint(final_df[i], final_df[j])
+            pair = i + '-' + j # type: ignore
+            statistic, p_value, critical_values = coint(final_df[i], final_df[j]) # calcualtion of the cointegration test
             print(pair, "statistic:", statistic, "p-value:", p_value, "critical values:", critical_values)
