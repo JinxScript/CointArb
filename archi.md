@@ -22,5 +22,5 @@ with a linear regression of `X₂` on `X₁`, then calculate the spread as:
 spread = X₂ - m × X₁
 ```
 
-USE Rolling OLS 
+Z score 
 
